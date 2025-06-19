@@ -9,14 +9,14 @@ export default function MessageScreen({ onNext, ...motionProps }) {
     const [isTyping, setIsTyping] = useState(true)
 
     const message =
-        "My darling, every star in this endless sky whispers your name to me. The moon feels lonely without your radiant smile to compete with its glow. Distance is just a number when you mean everything to my heart. You are my sunshine in the darkest nights, my anchor in the stormiest seas. I love you more than all the stars combined. 💕✨"
+        "My darling, every star in this endless sky whispers your name to me. The moon feels lonely without your radiant smile to compete with its glow. Distance is just a number when you mean everything to my heart. You are my sunshine in the darkest nights, my anchor in the stormiest seas. I love you more than all the stars combined.💕✨"
 
     useEffect(() => {
         if (currentIndex < message.length) {
             const timer = setTimeout(() => {
                 setDisplayText((prev) => prev + message[currentIndex])
                 setCurrentIndex((prev) => prev + 1)
-            }, 10)
+            }, 15)
             return () => clearTimeout(timer)
         } else {
             setIsTyping(false)
@@ -64,7 +64,7 @@ export default function MessageScreen({ onNext, ...motionProps }) {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.5 }}
                     >
-                        Our Memories 📸
+                        Our Memories📸
                     </motion.button>
                 )}
             </div>

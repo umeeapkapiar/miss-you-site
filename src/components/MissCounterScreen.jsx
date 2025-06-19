@@ -22,16 +22,6 @@ export default function MissCounterScreen({ onNext, ...motionProps }) {
 
   return (
     <motion.div {...motionProps} className="min-h-screen flex items-center justify-center text-center px-6 relative">
-      {/* Cute GIF */}
-      {/* <div className="absolute top-20 left-20 hidden md:block">
-        <motion.div
-          className="w-40 h-40 rounded-2xl overflow-hidden shadow-2xl border border-pink-500/20"
-          animate={{ rotate: [-3, 3, -3] }}
-          transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
-        >
-          <img src="/cute-heart.gif" alt="Beating heart" className="w-full h-full object-cover" />
-        </motion.div>
-      </div> */}
 
       {/* Subtle background glow */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -56,7 +46,7 @@ export default function MissCounterScreen({ onNext, ...motionProps }) {
           animate={{ scale: 1 }}
           transition={{ delay: 0.3, type: "spring" }}
         >
-          <div className="mb-4"><img src="/gifs/cry.gif" alt="cry gif" className="w-48" /></div>
+          <div className="mb-4"><img src="/gifs/crying.gif" alt="cry gif" className="w-48" /></div>
         </motion.div>
 
         <motion.h2
@@ -103,7 +93,7 @@ export default function MissCounterScreen({ onNext, ...motionProps }) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 2 }}
         >
-          See more 💌
+          Hear my heart💗
         </motion.button>
       </div>
     </motion.div>

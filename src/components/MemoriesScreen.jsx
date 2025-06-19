@@ -9,12 +9,10 @@ import "swiper/css/pagination"
 
 export default function MemoriesScreen({ onNext, ...motionProps }) {
     const memories = [
-        { id: 1, title: "Our First Date", emoji: "💕", color: "from-pink-400 to-purple-500" },
-        { id: 2, title: "That Cute Selfie", emoji: "📸", color: "from-purple-400 to-pink-500" },
-        { id: 3, title: "Dancing Together", emoji: "💃", color: "from-blue-400 to-purple-500" },
-        { id: 4, title: "Sunset Walks", emoji: "🌅", color: "from-orange-400 to-pink-500" },
-        { id: 5, title: "Cozy Nights", emoji: "🌙", color: "from-indigo-400 to-purple-500" },
-        { id: 6, title: "Silly Moments", emoji: "😄", color: "from-pink-400 to-red-500" },
+        { id: 1, imgSrc: "./images/1.jpg", title: "Our First Date", emoji: "💕", color: "from-pink-400 to-purple-500" },
+        { id: 2, imgSrc: "./images/2.jpg", title: "That Cute Selfie", emoji: "📸", color: "from-purple-400 to-pink-500" },
+        { id: 3, imgSrc: "./images/3.jpg", title: "Dancing Together", emoji: "💃", color: "from-blue-400 to-purple-500" },
+        { id: 4, imgSrc: "./images/4.jpg", title: "Sunset Walks", emoji: "🌅", color: "from-orange-400 to-pink-500" },
     ]
 
     return (
@@ -34,7 +32,7 @@ export default function MemoriesScreen({ onNext, ...motionProps }) {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.6 }}
             >
-                I see these memories daily
+                These memories… they make me miss you even more❤️
             </motion.p>
 
             <motion.div
@@ -64,11 +62,7 @@ export default function MemoriesScreen({ onNext, ...motionProps }) {
                             <div
                                 className={`w-full h-full bg-gradient-to-br ${memory.color} rounded-3xl flex flex-col items-center justify-center text-white shadow-2xl relative overflow-hidden`}
                             >
-                                <div className="text-8xl mb-4 z-10">{memory.emoji}</div>
-                                <h3 className="text-2xl font-bold mb-2 z-10">{memory.title}</h3>
-                                <p className="text-white/80 text-center px-4 z-10 font-light">
-                                    A moment frozen in time, forever in my heart
-                                </p>
+                                <img src={memory.imgSrc} alt="" />
                             </div>
                         </SwiperSlide>
                     ))}
@@ -84,7 +78,7 @@ export default function MemoriesScreen({ onNext, ...motionProps }) {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1.5 }}
             >
-                One More Thing 💝
+                One More Thing💝
             </motion.button>
         </motion.div>
     )

@@ -27,13 +27,13 @@ export default function Loader() {
             {stars.map((star, i) => (
                 <motion.div
                     key={i}
-                    className="absolute w-0.5 h-0.5 bg-white/80 rounded-full"
+                    className="absolute w-0.5 h-0.5 bg-white rounded-full"
                     style={{
                         left: `${star.left}%`,
                         top: `${star.top}%`,
                     }}
                     animate={{
-                        opacity: [0.1, 0.4, 0.1],
+                        opacity: [0.3, 0.8, 0.3],
                         scale: [0.5, 1, 0.5],
                     }}
                     transition={{
