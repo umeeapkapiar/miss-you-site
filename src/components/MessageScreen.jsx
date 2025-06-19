@@ -9,7 +9,7 @@ export default function MessageScreen({ onNext, ...motionProps }) {
     const [isTyping, setIsTyping] = useState(true)
 
     const message =
-        "My darling, every star in this endless sky whispers your name to me. The moon feels lonely without your radiant smile to compete with its glow. Distance is just a number when you mean everything to my heart. You are my sunshine in the darkest nights, my anchor in the stormiest seas. I love you more than all the stars combined.💕✨"
+        "My darling, every star in this endless sky whispers your name to me. The moon feels lonely without your radiant smile to compete with its glow. Distance is just a number when you mean everything to my heart. You are my sunshine in the darkest nights, my anchor in the stormiest seas. I love you more than all the stars combined💕✨"
 
     useEffect(() => {
         if (currentIndex < message.length) {

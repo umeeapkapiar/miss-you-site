@@ -66,9 +66,6 @@ export default function MissCounterScreen({ onNext, ...motionProps }) {
         >
           <motion.div
             className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-pink-400 via-purple-400 to-pink-400 bg-clip-text text-transparent"
-            // animate={{
-            //   scale: [1, 1.05, 1],
-            // }}
             transition={{ duration: 2 }}
           >
             {showInfinity ? "∞" : counter.toLocaleString()}
@@ -81,7 +78,7 @@ export default function MissCounterScreen({ onNext, ...motionProps }) {
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2 }}
         >
-          {showInfinity ? "times and still counting..." : "times every second"}
+          {showInfinity ? "times… and forever more" : "times every moment"}
         </motion.p>
 
         <motion.button
