@@ -16,7 +16,7 @@ export default function MessageScreen({ onNext, ...motionProps }) {
             const timer = setTimeout(() => {
                 setDisplayText((prev) => prev + message[currentIndex])
                 setCurrentIndex((prev) => prev + 1)
-            }, 15)
+            }, 30)
             return () => clearTimeout(timer)
         } else {
             setIsTyping(false)

@@ -88,7 +88,8 @@ export default function MissCounterScreen({ onNext, ...motionProps }) {
           whileTap={{ scale: 0.98 }}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 2 }}
+          transition={{ delay: 7.4 }}
+          disabled={!showInfinity}
         >
           Hear my heart💗
         </motion.button>

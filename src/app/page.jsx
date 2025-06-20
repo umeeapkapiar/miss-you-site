@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "motion/react"
 import Loader from "@/components/Loader"
 import WelcomeScreen from "@/components/WelcomeScreen"

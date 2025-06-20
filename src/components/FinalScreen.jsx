@@ -19,7 +19,7 @@ export default function FinalScreen({ ...motionProps }) {
             } else {
                 setIsTyping(false)
             }
-        }, 15)
+        }, 30)
         return () => clearTimeout(timer)
     }, [currentIndex, finalMessage])
 
