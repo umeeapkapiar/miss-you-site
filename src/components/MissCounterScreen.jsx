@@ -44,7 +44,7 @@ export default function MissCounterScreen({ onNext, ...motionProps }) {
           className="mb-8 flex justify-center"
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
-          transition={{ delay: 0.3, type: "spring" }}
+          transition={{ delay: 0.3 }}
         >
           <div className="mb-4"><img src="/gifs/crying.gif" alt="cry gif" className="w-48" /></div>
         </motion.div>
