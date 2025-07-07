@@ -10,13 +10,13 @@ export default function FinalScreen({ ...motionProps }) {
 
     const finalMessage =
         "Chahe hum milon door hon, phir bhi har waqt sirf tum hi mere zehan mein rehti ho.
-Har woh second jo tumhare bagair guzarta hai, adhoora lagta hai.
-Mujhe tumhari muskurahat, tumhari hansi, tumhari awaaz — sab kuch yaad aata hai.
-Tum is shor se bhari duniya mein meri sukoon ho.
-Faasla chahe jitna bhi ho, mera dil sirf tumhara ghar hai.
-Main intezaar nahi kar sakta us din ka jab tumhein apni baahon mein le sakun.
-Us waqt tak sirf itna jaan lo…
-Main tumhein itna yaad karta hoon jitna lafzon mein bayaan nahi ho sakta 🌙💕"
+"Har woh second jo tumhare bagair guzarta hai, adhoora lagta hai.
+"Mujhe tumhari muskurahat, tumhari hansi, tumhari awaaz — sab kuch yaad aata hai.
+"Tum is shor se bhari duniya mein meri sukoon ho.
+"Faasla chahe jitna bhi ho, mera dil sirf tumhara ghar hai.
+"Main intezaar nahi kar sakta us din ka jab tumhein apni baahon mein le sakun.
+"Us waqt tak sirf itna jaan lo…
+"Main tumhein itna yaad karta hoon jitna lafzon mein bayaan nahi ho sakta 🌙💕"
 
     useEffect(() => {
         const timer = setTimeout(() => {
