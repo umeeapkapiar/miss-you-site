@@ -22,7 +22,7 @@ export default function WelcomeScreen({ onNext, ...motionProps }) {
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.6 }}
                 >
-                    Hey Beautiful
+                    Oye Shoniyee
                 </motion.h1>
 
                 <motion.p
