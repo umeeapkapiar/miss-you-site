@@ -10,11 +10,11 @@ export default function MessageScreen({ onNext, ...motionProps }) {
 
     const message =
         "Jab tum nazar nahi aati, to har cheez adhoori lagti hai...
-Jaise chaand ke bagair raat bejaan ho,
-Jaise phoolon ke bagair bahaar sooni ho.
-Tum meri zindagi ka woh hissa ho jo kabhi gum nahi hona chahiye.
-Har dharkan mein sirf tum ho...
-I miss you more than words can ever say. Tumse mohabbat har saans se zyada hai. 💘"
+"Jaise chaand ke bagair raat bejaan ho,
+"Jaise phoolon ke bagair bahaar sooni ho.
+"Tum meri zindagi ka woh hissa ho jo kabhi gum nahi hona chahiye.
+"Har dharkan mein sirf tum ho...
+"I miss you more than words can ever say. Tumse mohabbat har saans se zyada hai. 💘"
 
     useEffect(() => {
         if (currentIndex < message.length) {
